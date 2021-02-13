@@ -19,13 +19,6 @@ div td {
  /* padding-top: 20px; */
 }
 
-.page-home-header-table {
-  border-bottom: 1px solid #ffffff;
-  font-family: 'UserFont';
-  color: #f1f1f1;
-  font-size: 20px;
-}
-
 .page-home-header-table-nested td {
   transition: 0.5s color;
 }
@@ -61,12 +54,7 @@ div td {
   font-size: 20px;
 }
 
-.page-aboutme-header-table-nested {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- /* padding-bottom: 20px; */
-}
+
 
 .page-aboutme-header-table-nested td {
   transition: 0.5s color;
@@ -109,6 +97,12 @@ div td {
 */
 
 @media (max-width: 499px) {
+  .page-home-header-table {
+    font-family: 'UserFont';
+    color: #f1f1f1;
+    font-size: 20px;
+  }
+
   .page-aboutme-header-table-nested {
     display: flex;
     flex-direction: column;
@@ -124,8 +118,7 @@ div td {
   }
   
   .page-aboutme-content-image {
-    width: 75%;
-    margin-top: 60px;
+    width: 100%;
     margin-bottom: 40px;
   } 
   
@@ -150,6 +143,12 @@ div td {
 }
 
 @media (min-width: 500px) {
+  .page-home-header-table {
+    font-family: 'UserFont';
+    color: #f1f1f1;
+    font-size: 20px;
+  }
+
   .page-aboutme-header-table-nested {
     display: flex;
     flex-direction: column;
@@ -165,7 +164,7 @@ div td {
   }
   
   .page-aboutme-content-image {
-    width: 75%;
+    width: 100%;
     margin-top: 60px;
     margin-bottom: 40px;
   } 
@@ -191,6 +190,20 @@ div td {
 }
 
 @media (min-width: 602px) {
+  .page-home-header-table {
+    border-bottom: 1px solid #ffffff;
+    font-family: 'UserFont';
+    color: #f1f1f1;
+    font-size: 20px;
+  }
+
+  .page-aboutme-header-table-nested {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /* padding-bottom: 20px; */
+  }
+
   .page-home-header-table-nested {
     display: flex;
     flex-direction: column;
@@ -206,7 +219,7 @@ div td {
   }
   
   .page-aboutme-content-image {
-    width: 75%;
+    width: 100%;
     margin-top: 60px;
     margin-bottom: 40px;
   } 
@@ -232,6 +245,20 @@ div td {
 }
 
 @media (min-width: 1350px) {
+  .page-home-header-table {
+    border-bottom: 1px solid #ffffff;
+    font-family: 'UserFont';
+    color: #f1f1f1;
+    font-size: 20px;
+  }
+
+  .page-aboutme-header-table-nested {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /* padding-bottom: 20px; */
+  }
+
   .page-home-header-table-nested {
     display: flex;
     flex-direction: column;
