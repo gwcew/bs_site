@@ -2,21 +2,25 @@ import React from 'react';
 
 function Component({arrayTexts, className, classNameTable, classNameTableNested}) {
     const generatedLists = arrayTexts.map((item) => (
-        <td>{item}</td>
+        <td key={item}>{item}</td>
     ));
 
     return (
     <header className={className}>
         <table className={classNameTable} width="90%">
-            <tr>
-                <td>
-                    <table className={classNameTableNested} cellPadding="25">
-                        <tr>
-                            {generatedLists}
-                        </tr>
-                    </table>
-                </td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td>
+                        <table className={classNameTableNested} cellPadding="25">
+                            <tbody>
+                                <tr>
+                                    {generatedLists}
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </header>
 );

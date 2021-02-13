@@ -4,6 +4,10 @@
   font-style: normal;
 }
 
+div td {
+  font-family: 'UserFont';
+}
+
 .page-home {
   background-image: url(./resources/page_home_background.png);
 }
@@ -40,7 +44,6 @@
 
 .page-home-footer {
   padding-top: 800px;
-  font-family: 'UserFont';
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +64,6 @@
 
 .page-aboutme-header-table {
   border-bottom: 1px solid #bebebe;
-  font-family: 'UserFont';
   color: #bebebe;
   font-size: 20px;
 }
@@ -84,42 +86,102 @@
 
 .page-aboutme-footer {
   clear: left;
-  font-family: 'UserFont';
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #bebebe;
   font-size: 20px;
 }
+/*
+@media (max-width: 773px) {
+  .page-aboutme-content {
+    margin-right: 100px;
+  }
+  
+  .page-aboutme-content-post-header {
+    letter-spacing: 3px;
+    font-size: 42px;
+    padding-bottom: 30px;
+  }
+  
+  .page-aboutme-content-post-footer {
+    font-size: 34px;
+  }
+  
+  .page-aboutme-content-post-body {
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+*/
 
-.page-aboutme-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+@media (min-width: 600px) {
+  .page-aboutme-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .page-aboutme-content-image {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  } 
+  
+  .page-aboutme-content-post {
+
+    margin-bottom: 25px;
+  }
+  
+  .page-aboutme-content-post-header {
+    letter-spacing: 3px;
+    font-size: 42px;
+    padding-bottom: 30px;
+  }
+  
+  .page-aboutme-content-post-footer {
+    font-size: 34px;
+  }
+  
+  .page-aboutme-content-post-body {
+    font-size: 20px;
+    padding: 5px;
+  }
 }
 
-.page-aboutme-content-image {
-  width: 50%;
-  height: 50%;
-  float: left;
-  margin-left: 170px;
-  margin-top: 60px;
-  margin-right: 50px;
-  margin-bottom: 80px;
-} 
-
-.page-aboutme-content-post-header {
-  letter-spacing: 3px;
-  font-family: 'UserFont';
-  font-size: 42px;
+@media (min-width: 1350px) {
+  .page-aboutme-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+  }
+  
+  .page-aboutme-content-image {
+    float: left;
+    margin-left: 170px;
+    margin-top: 60px;
+    margin-right: 50px;
+    margin-bottom: 80px;
+  } 
+  
+  
+  .page-aboutme-content-post-header {
+    letter-spacing: 3px;
+    font-size: 42px;
+    padding-bottom: 30px;
+  }
+  
+  .page-aboutme-content-post-footer {
+    font-size: 34px;
+  }
+  
+  .page-aboutme-content-post-body {
+    font-size: 20px;
+    padding: 5px;
+  }
 }
 
-.page-aboutme-content-post-footer {
-  font-family: 'UserFont';
-  font-size: 34px;
-}
 
-.page-aboutme-content-post-body {
-  font-family: 'UserFont';
-  font-size: 20px;
-}
+
