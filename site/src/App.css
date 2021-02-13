@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+ /* padding-top: 20px; */
 }
 
 .page-home-header-table {
@@ -19,6 +20,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+ /* padding-bottom: 20px; */
+}
+
+.page-home-header-table-nested td {
+  transition: 0.5s color;
+}
+
+.page-home-header-table-nested td:hover {
+  color: #464646;
+  transition: 0.75s color;
 }
 
 .page-home-footer {

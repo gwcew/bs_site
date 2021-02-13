@@ -1,13 +1,13 @@
 import React from 'react';
-
+import image from './darrow.png'
 function Component({text, className}) {
     return <footer className={className}>
-        <div>
+        <div style={{letterSpacing: '2px'}}>
             {text}
         </div>
-        <div>
-            <img src="../../resources/darrow.png" alt=""></img>
-        </div>
+        <p>
+            <img src={image} alt=""></img>
+        </p>
     </footer>
 }
 

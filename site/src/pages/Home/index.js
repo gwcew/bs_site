@@ -8,7 +8,7 @@ function Page() {
             <table className="page-home-header-table" width="90%">
                 <tr>
                     <td>
-                        <table className="page-home-header-table-nested" cellPadding="10">
+                        <table className="page-home-header-table-nested" cellPadding="25">
                             <tr>
                                 <td>HOME</td>
                                 <td>ABOUT ME</td>
