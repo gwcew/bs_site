@@ -1,0 +1,38 @@
+.page-home {
+  background-image: url(./resources/page_home_background.png);
+}
+
+.page-home-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-home-header-table {
+  border-bottom: 1px solid #ffffff;
+  font-family: 'UserFont';
+  color: #f1f1f1;
+  font-size: 20px;
+}
+
+.page-home-header-table-nested {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-home-footer {
+  padding-top: 800px;
+  font-family: 'UserFont';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f1f1f1;
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: "UserFont";
+  src: url(./resources/font.ttf) format("truetype");
+  font-style: normal;
+}
