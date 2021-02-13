@@ -26,13 +26,6 @@ div td {
   font-size: 20px;
 }
 
-.page-home-header-table-nested {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- /* padding-bottom: 20px; */
-}
-
 .page-home-header-table-nested td {
   transition: 0.5s color;
 }
@@ -115,7 +108,14 @@ div td {
 }
 */
 
-@media (min-width: 600px) {
+@media (max-width: 499px) {
+  .page-aboutme-header-table-nested {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   /* padding-bottom: 20px; */
+  }
+
   .page-aboutme-content {
     display: flex;
     flex-direction: column;
@@ -124,12 +124,13 @@ div td {
   }
   
   .page-aboutme-content-image {
+    width: 75%;
     margin-top: 60px;
     margin-bottom: 40px;
   } 
   
   .page-aboutme-content-post {
-
+    width: 75%;
     margin-bottom: 25px;
   }
   
@@ -145,11 +146,99 @@ div td {
   
   .page-aboutme-content-post-body {
     font-size: 20px;
-    padding: 5px;
+  }
+}
+
+@media (min-width: 500px) {
+  .page-aboutme-header-table-nested {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   /* padding-bottom: 20px; */
+  }
+
+  .page-aboutme-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .page-aboutme-content-image {
+    width: 75%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  } 
+  
+  .page-aboutme-content-post {
+    width: 75%;
+    margin-bottom: 25px;
+  }
+  
+  .page-aboutme-content-post-header {
+    letter-spacing: 3px;
+    font-size: 42px;
+    padding-bottom: 30px;
+  }
+  
+  .page-aboutme-content-post-footer {
+    font-size: 34px;
+  }
+  
+  .page-aboutme-content-post-body {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 602px) {
+  .page-home-header-table-nested {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /* padding-bottom: 20px; */
+  }
+
+  .page-aboutme-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .page-aboutme-content-image {
+    width: 75%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  } 
+  
+  .page-aboutme-content-post {
+    width: 75%;
+    margin-bottom: 25px;
+  }
+  
+  .page-aboutme-content-post-header {
+    letter-spacing: 3px;
+    font-size: 42px;
+    padding-bottom: 30px;
+  }
+  
+  .page-aboutme-content-post-footer {
+    font-size: 34px;
+  }
+  
+  .page-aboutme-content-post-body {
+    font-size: 20px;
   }
 }
 
 @media (min-width: 1350px) {
+  .page-home-header-table-nested {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /* padding-bottom: 20px; */
+  }
+
   .page-aboutme-content {
     display: flex;
     flex-direction: row;
