@@ -1,25 +1,14 @@
 import React from 'react';
 import LabelToScroll from '../../components/LabelToScroll';
-
+import HeaderComponent from '../../components/Header';
 
 function Page() {
     return <div className="page-home">
-        <header className="page-home-header">
-            <table className="page-home-header-table" width="90%">
-                <tr>
-                    <td>
-                        <table className="page-home-header-table-nested" cellPadding="25">
-                            <tr>
-                                <td>HOME</td>
-                                <td>ABOUT ME</td>
-                                <td>PORTFOLIO</td>
-                                <td>CONTACT</td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </header>
+        <HeaderComponent 
+        arrayTexts={["HOME", "ABOUT ME", "PORTFOLIO", "CONTACT"]}
+        className="page-home-header"
+        classNameTable="page-home-header-table"
+        classNameTableNested="page-home-header-table-nested"></HeaderComponent>
         <LabelToScroll text="SCROLL DOWN TO SEE MORE" className="page-home-footer"></LabelToScroll>
     </div>
 }
